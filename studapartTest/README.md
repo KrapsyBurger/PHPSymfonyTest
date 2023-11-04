@@ -1,6 +1,7 @@
 Hello and welcome to my application test for Studapart !
 
 How to start :
+
 -> First git clone the project.
 
 -> Run `yarn install` at the root repo.
