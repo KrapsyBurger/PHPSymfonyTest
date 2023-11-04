@@ -43,9 +43,9 @@
     "dev": "encore dev",
     "watch": "encore dev --watch",
     "build": "encore production --progress",
-    "start:db": "docker-compose up",
-    "apply:migrations": "symfony console make:migration -y && symfony console doctrine:migrations:migrate",
+    "start-db": "docker-compose up",
+    "apply-migrations": "symfony console make:migration && symfony console doctrine:migrations:migrate",
     "build-packages": "yarn install && sleep 10 && composer install",
-    "run:server": "yarn run build && symfony server:start"
+    "run-server": "yarn run build && symfony server:start"
   }
 }
