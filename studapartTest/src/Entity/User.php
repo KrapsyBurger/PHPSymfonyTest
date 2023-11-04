@@ -3,12 +3,17 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
+use DateInterval;
+use DateTime;
+use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 #[ORM\Entity(repositoryClass: UserRepository::class)]
 #[ORM\Table(name: '`user`')]
+#[UniqueEntity(fields: ['email'], message: 'There is already an account with this email')]
 class User implements UserInterface, PasswordAuthenticatedUserInterface
 {
     #[ORM\Id]
@@ -19,6 +24,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(length: 180, unique: true)]
     private ?string $email = null;
 
+	#[ORM\Column(length: 10)]
+                              	private ?string $phoneNumber = null;
+
     #[ORM\Column]
     private array $roles = [];
 
@@ -27,6 +35,22 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      */
     #[ORM\Column]
     private ?string $password = null;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $tokenRegistration = null;
+
+    // #[ORM\Column(type: Types::DATETIME_MUTABLE)]
+    // private ?\DateTimeInterface $tokenRegistrationLifeTime = null;
+
+    #[ORM\Column]
+    private ?bool $isVerified = false;
+
+
+	public function _construct()
+	{
+		$this->isVerified = false;
+		// $this->tokenRegistrationLifeTime = (new DateTime('now'))->add(new DateInterval("P1D"));
+	}
 
     public function getId(): ?int
     {
@@ -41,6 +65,18 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setEmail(string $email): static
     {
         $this->email = $email;
+
+        return $this;
+    }
+
+	 public function getPhoneNumber(): ?string
+    {
+        return $this->phoneNumber;
+    }
+
+    public function setPhoneNumber(string $phone_number): static
+    {
+        $this->phoneNumber = $phone_number;
 
         return $this;
     }
@@ -96,5 +132,41 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     {
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
+    }
+
+    public function getTokenRegistration(): ?string
+    {
+        return $this->tokenRegistration;
+    }
+
+    public function setTokenRegistration(?string $tokenRegistration): static
+    {
+        $this->tokenRegistration = $tokenRegistration;
+
+        return $this;
+    }
+
+    public function getTokenRegistrationLifeTime(): ?\DateTimeInterface
+    {
+        return $this->tokenRegistrationLifeTime;
+    }
+
+    public function setTokenRegistrationLifeTime(\DateTimeInterface $tokenRegistrationLifeTime): static
+    {
+        $this->tokenRegistrationLifeTime = $tokenRegistrationLifeTime;
+
+        return $this;
+    }
+
+    public function isIsVerified(): ?bool
+    {
+        return $this->isVerified;
+    }
+
+    public function setIsVerified(bool $isVerified): static
+    {
+        $this->isVerified = $isVerified;
+
+        return $this;
     }
 }

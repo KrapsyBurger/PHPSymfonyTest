@@ -6,6 +6,8 @@ How to start :
 
 -> Run `yarn install` at the root repo.
 
+-> Run `docker-compose up` at the root repo.
+
 -> Run `symfony server:start` at the root repo.
 
 -> Run `yarn run build` at the root repo.

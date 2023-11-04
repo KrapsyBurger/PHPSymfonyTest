@@ -9,5 +9,17 @@
   "assets/fonts/Montserrat-Bold.ttf": "http://localhost:8080/assets/fonts/Montserrat-Bold.0915f0a8.ttf",
   "assets/fonts/Poppins-Regular.ttf": "http://localhost:8080/assets/fonts/Poppins-Regular.1c701c9a.ttf",
   "assets/fonts/Poppins-Medium.ttf": "http://localhost:8080/assets/fonts/Poppins-Medium.b59f6a63.ttf",
-  "assets/fonts/Poppins-Bold.ttf": "http://localhost:8080/assets/fonts/Poppins-Bold.e2abc8f5.ttf"
+  "assets/fonts/Poppins-Bold.ttf": "http://localhost:8080/assets/fonts/Poppins-Bold.e2abc8f5.ttf",
+  "assets/fonts/Montserrat-BoldItalic.ttf": "http://localhost:8080/assets/fonts/Montserrat-BoldItalic.04263045.ttf",
+  "assets/fonts/Montserrat-Italic.ttf": "http://localhost:8080/assets/fonts/Montserrat-Italic.ce3a49f8.ttf",
+  "assets/fonts/Montserrat-Regular.ttf": "http://localhost:8080/assets/fonts/Montserrat-Regular.2a2d37bf.ttf",
+  "assets/fonts/Montserrat-SemiBold.ttf": "http://localhost:8080/assets/fonts/Montserrat-SemiBold.2f7a8461.ttf",
+  "assets/fonts/Montserrat-Medium.ttf": "http://localhost:8080/assets/fonts/Montserrat-Medium.647f0e61.ttf",
+  "assets/fonts/Montserrat-Light.ttf": "http://localhost:8080/assets/fonts/Montserrat-Light.34270926.ttf",
+  "assets/images/montserrat-v12-latin-900.svg": "http://localhost:8080/assets/images/montserrat-v12-latin-900.3caa960f.svg",
+  "assets/fonts/montserrat-v12-latin-900.ttf": "http://localhost:8080/assets/fonts/montserrat-v12-latin-900.d028a844.ttf",
+  "assets/images/background.jpg": "http://localhost:8080/assets/images/background.387d17cd.jpg",
+  "assets/fonts/montserrat-v12-latin-900.woff": "http://localhost:8080/assets/fonts/montserrat-v12-latin-900.c440708c.woff",
+  "assets/fonts/montserrat-v12-latin-900.eot": "http://localhost:8080/assets/fonts/montserrat-v12-latin-900.a604bfea.eot",
+  "assets/fonts/montserrat-v12-latin-900.woff2": "http://localhost:8080/assets/fonts/montserrat-v12-latin-900.041d8fc0.woff2"
 }
