@@ -2,5 +2,8 @@
   "assets/app.css": "http://localhost:8080/assets/app.css",
   "assets/app.js": "http://localhost:8080/assets/app.js",
   "assets/runtime.js": "http://localhost:8080/assets/runtime.js",
-  "assets/vendors-node_modules_mini-css-extract-plugin_dist_hmr_hotModuleReplacement_js-node_modules_we-857c62.js": "http://localhost:8080/assets/vendors-node_modules_mini-css-extract-plugin_dist_hmr_hotModuleReplacement_js-node_modules_we-857c62.js"
+  "assets/vendors-node_modules_mini-css-extract-plugin_dist_hmr_hotModuleReplacement_js-node_modules_we-857c62.js": "http://localhost:8080/assets/vendors-node_modules_mini-css-extract-plugin_dist_hmr_hotModuleReplacement_js-node_modules_we-857c62.js",
+  "assets/vendors-node_modules_webpack-dev-server_client_index_js_protocol_ws_3A_hostname_localhost_por-3885b1.js": "http://localhost:8080/assets/vendors-node_modules_webpack-dev-server_client_index_js_protocol_ws_3A_hostname_localhost_por-3885b1.js",
+  "assets/images/map-image.png": "http://localhost:8080/assets/images/map-image.3cd6dd98.png",
+  "assets/images/header-bg.jpg": "http://localhost:8080/assets/images/header-bg.050c4eca.jpg"
 }
