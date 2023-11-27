@@ -1,4 +1,4 @@
-Hello and welcome to my application test for Studapart !
+Hello and welcome to my Symfony test !
 
 How to start :
 
